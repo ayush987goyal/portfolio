@@ -31,14 +31,12 @@
     </v-toolbar>
 
     <v-content>
-      <v-container>
-        <intro /> 
-      </v-container>
+      <intro /> 
     </v-content>
 
-    <v-footer app>
+    <!-- <v-footer app>
       <span>&copy; 2018</span>
-    </v-footer>
+    </v-footer> -->
 
   </v-app>
 </template>
