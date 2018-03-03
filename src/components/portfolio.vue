@@ -1,5 +1,5 @@
 <template>
-  <v-card color="grey lighten-4">
+  <v-card color="blue-grey lighten-5">
     <v-card-media :src="require(`../assets/img/${details.image}`)" height="200px"></v-card-media>
     <v-card-title primary-title>
       <div>

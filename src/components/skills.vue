@@ -54,6 +54,7 @@ export default {
     grid-gap: 2rem;
     grid-row-gap: 4rem;
     justify-items: center;
+    align-items: center;
   }
 }
 </style>

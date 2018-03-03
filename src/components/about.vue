@@ -29,7 +29,7 @@
 
   &__para {
     margin-top: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
     font-weight: 300;
   }
