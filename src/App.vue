@@ -34,6 +34,7 @@
       <Intro ref="intro" />
       <About ref="about" /> 
       <Portfolios ref="portfolios" />
+      <Skills ref="skills" />
     </v-content>
 
     <!-- <v-footer app>
@@ -47,12 +48,14 @@
 import Intro from './components/intro';
 import About from './components/about';
 import Portfolios from './components/portfolios';
+import Skills from './components/skills';
 
 export default {
   components: {
     Intro,
     About,
-    Portfolios
+    Portfolios,
+    Skills
   },
   data() {
     return {

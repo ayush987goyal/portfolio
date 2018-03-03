@@ -23,13 +23,13 @@
   align-items: center;
 
   &__heading {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 400;
   }
 
   &__para {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-align: center;
     font-weight: 300;
   }
