@@ -1,7 +1,7 @@
 <template>
   <section class="intro">
     <div class="intro__card">
-      <img src="../assets/img/image.png" alt="Personal Image" class="intro__photo">
+      <img src="../assets/img/myimage.jpg" alt="Personal Image" class="intro__photo">
       <div class="intro__text">
         <div>
           <span class="intro__name">Ayush Goyal</span>
@@ -25,17 +25,17 @@
         </div>
       </div>
       <div class="intro__social">
-        <v-btn fab icon>
+        <v-btn fab dark icon href="https://github.com/ayush987goyal" target="_blank">
+          <i class="fab fa-github intro__social--icon"></i>
+        </v-btn>
+        <v-btn fab dark icon href="https://www.linkedin.com/in/ayush-goyal-1307/" target="_blank">
           <i class="fab fa-linkedin-in intro__social--icon"></i>
         </v-btn>
-        <v-btn fab icon>
-          <i class="fab fa-linkedin-in intro__social--icon"></i>
+        <v-btn fab dark icon href="https://twitter.com/ayush987goyal" target="_blank">
+          <i class="fab fa-twitter intro__social--icon"></i>
         </v-btn>
-        <v-btn fab icon>
-          <i class="fab fa-linkedin-in intro__social--icon"></i>
-        </v-btn>
-        <v-btn fab icon>
-          <i class="fab fa-linkedin-in intro__social--icon"></i>
+        <v-btn fab dark icon href="https://www.facebook.com/ayush987goyal" target="_blank">
+          <i class="fab fa-facebook-f intro__social--icon"></i>
         </v-btn>
       </div>
     </div>
@@ -50,7 +50,7 @@
       rgba(24, 33, 83, 0.75),
       rgba(24, 33, 83, 0.75)
     ),
-    url(../assets/img/business-laptop.jpg);
+    url(../assets/img/back.jpg);
   background-size: cover;
   background-position: center;
 
