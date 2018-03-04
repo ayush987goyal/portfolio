@@ -117,6 +117,17 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 7rem;
+
+    @media only screen and (max-width: 1100px) {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    @media only screen and (max-width: 730px) {
+      grid-template-columns: 18rem;
+      grid-gap: 3rem;
+      justify-items: center;
+      justify-content: center;
+    }
   }
 }
 </style>

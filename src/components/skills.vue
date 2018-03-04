@@ -55,6 +55,18 @@ export default {
     grid-row-gap: 4rem;
     justify-items: center;
     align-items: center;
+
+    @media only screen and (max-width: 1100px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: 850px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>

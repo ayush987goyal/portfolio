@@ -3,7 +3,7 @@
     <div class="intro__card">
       <img src="../assets/img/myimage.jpg" alt="Personal Image" class="intro__photo">
       <div class="intro__text">
-        <div>
+        <div class="intro__head">
           <span class="intro__name">Ayush Goyal</span>
           <p class="intro__desg">Web Developer</p>
         </div>
@@ -50,7 +50,7 @@
       rgba(24, 33, 83, 0.75),
       rgba(24, 33, 83, 0.75)
     ),
-    url(../assets/img/back.jpg);
+    url(../assets/img/pexels.jpeg);
   background-size: cover;
   background-position: center;
 
@@ -66,6 +66,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr) 5rem;
     justify-content: center;
+
+    @media only screen and (max-width: 1100px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content 5rem;
+    }
   }
 
   &__photo {
@@ -75,6 +80,10 @@
     object-position: top;
     filter: contrast(80%);
     display: block;
+
+    @media only screen and (max-width: 1100px) {
+      display: none;
+    }
   }
 
   &__text {
@@ -82,6 +91,33 @@
 
     display: grid;
     grid-template-columns: 1fr;
+
+    @media only screen and (max-width: 1100px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: 850px) {
+      grid-column-gap: 1rem;
+    }
+
+    @media only screen and (max-width: 730px) {
+      grid-template-columns: 1fr;
+      padding: 2rem 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 2rem 0;
+    }
+  }
+
+  &__head {
+    @media only screen and (max-width: 1100px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      grid-column: 1 / -1;
+    }
   }
 
   &__name {
@@ -105,6 +141,14 @@
       font-weight: 300;
       font-size: 1.1rem;
     }
+
+    @media only screen and (max-width: 730px) {
+      margin-left: 6rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-left: 4rem;
+    }
   }
 
   &__social {
@@ -114,6 +158,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    @media only screen and (max-width: 1100px) {
+      flex-direction: row;
+    }
 
     &--icon {
       color: #fff;

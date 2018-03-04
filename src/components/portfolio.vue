@@ -1,9 +1,9 @@
 <template>
   <v-card color="blue-grey lighten-5">
-    <v-card-media :src="require(`../assets/img/${details.image}`)" height="200px"></v-card-media>
+    <v-card-media :src="require(`../assets/img/${details.image}`)" height="15vw"></v-card-media>
     <v-card-title primary-title>
       <div>
-        <h3 class="headline">{{ details.title }}</h3>
+        <h3 class="my-title">{{ details.title }}</h3>
       </div>
     </v-card-title> 
     <v-card-actions>
@@ -18,3 +18,18 @@ export default {
   props: ['details']
 };
 </script>
+
+<style lang="scss" scoped>
+.my-title {
+  font-weight: 400;
+  font-size: 2rem;
+
+  @media only screen and (max-width: 850px) {
+    font-size: 1.4rem;
+  }
+
+  @media only screen and (max-width: 730px) {
+    font-size: 1rem;
+  }
+}
+</style>
