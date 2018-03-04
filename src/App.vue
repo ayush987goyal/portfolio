@@ -35,11 +35,13 @@
       <About ref="about" /> 
       <Portfolios ref="portfolios" />
       <Skills ref="skills" />
+      <Contact ref="contact" />
+      <!-- <v-footer absolute>
+        <v-flex xs12 py-3 text-xs-center>
+          &copy;2018 — <strong>Ayush</strong>
+        </v-flex>
+      </v-footer> -->
     </v-content>
-
-    <!-- <v-footer app>
-      <span>&copy; 2018</span>
-    </v-footer> -->
 
   </v-app>
 </template>
@@ -49,13 +51,15 @@ import Intro from './components/intro';
 import About from './components/about';
 import Portfolios from './components/portfolios';
 import Skills from './components/skills';
+import Contact from './components/contact';
 
 export default {
   components: {
     Intro,
     About,
     Portfolios,
-    Skills
+    Skills,
+    Contact
   },
   data() {
     return {
