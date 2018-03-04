@@ -41,8 +41,9 @@
         
         <v-btn
           @click="submit"
-          :disabled="!valid">
-          send
+          :loading="loading"
+          :disabled="!valid || loading">
+          {{ btnText }}
         </v-btn>
       </v-form>
     </div>
@@ -50,10 +51,14 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
       valid: true,
+      loading: false,
+      btnText: 'Send',
       name: '',
       nameRules: [v => !!v || 'Name is required'],
       email: '',
@@ -69,12 +74,23 @@ export default {
   },
   methods: {
     submit() {
-      console.log({
-        name: this.name,
-        email: this.email,
-        subject: this.subject,
-        message: this.message
-      });
+      this.loading = true;
+      axios
+        .post('https://us-central1-ayush-port.cloudfunctions.net/sendMail', {
+          name: this.name,
+          email: this.email,
+          subject: this.subject,
+          message: this.message
+        })
+        .then(() => {
+          this.loading = false;
+          this.btnText = 'Sent!';
+          this.$refs.form.reset();
+          setTimeout(() => {
+            this.btnText = 'Send';
+          }, 1500);
+        })
+        .catch(error => console.log(error));
     }
   }
 };
