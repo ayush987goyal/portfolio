@@ -106,6 +106,10 @@ export default {
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: 600px) {
+    padding: 2rem 4rem;
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 3rem;
@@ -114,6 +118,10 @@ export default {
       color: #fff;
       font-weight: 300;
       font-size: 3.5rem;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -121,6 +129,10 @@ export default {
     background-color: #fff;
     width: 55vw;
     padding: 2rem;
+
+    @media only screen and (max-width: 600px) {
+      width: auto;
+    }
   }
 }
 </style>

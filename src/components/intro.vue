@@ -71,6 +71,10 @@
       grid-template-columns: 1fr;
       grid-template-rows: min-content 5rem;
     }
+
+    @media only screen and (max-width: 730px) {
+      width: auto;
+    }
   }
 
   &__photo {
@@ -102,10 +106,6 @@
 
     @media only screen and (max-width: 730px) {
       grid-template-columns: 1fr;
-      padding: 2rem 0;
-    }
-
-    @media only screen and (max-width: 600px) {
       padding: 2rem 0;
     }
   }
@@ -143,10 +143,6 @@
     }
 
     @media only screen and (max-width: 730px) {
-      margin-left: 6rem;
-    }
-
-    @media only screen and (max-width: 600px) {
       margin-left: 4rem;
     }
   }

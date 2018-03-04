@@ -1,12 +1,12 @@
 <template>
-  <v-card color="blue-grey lighten-5">
+  <v-card color="blue-grey lighten-5 my-card">
     <v-card-media :src="require(`../assets/img/${details.image}`)" height="15vw"></v-card-media>
     <v-card-title primary-title>
       <div>
         <h3 class="my-title">{{ details.title }}</h3>
       </div>
     </v-card-title> 
-    <v-card-actions>
+    <v-card-actions class="my-action">
       <v-btn flat color="blue" :href="details.explore" target="_blank">Explore</v-btn>
       <v-btn flat color="blue" :href="details.github" target="_blank"><i class="fab fa-github intro__social--icon mr-2"></i>GitHub</v-btn>
     </v-card-actions>
@@ -30,6 +30,17 @@ export default {
 
   @media only screen and (max-width: 730px) {
     font-size: 1rem;
+  }
+}
+
+.my-card {
+  width: 100%;
+}
+
+.my-action {
+  @media only screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>

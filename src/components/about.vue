@@ -22,9 +22,17 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: 600px) {
+    padding: 3rem;
+  }
+
   &__heading {
     font-size: 3.5rem;
     font-weight: 400;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 2.5rem;
+    }
   }
 
   &__para {
@@ -32,6 +40,10 @@
     font-size: 1.4rem;
     text-align: center;
     font-weight: 300;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
   }
 }
 </style>

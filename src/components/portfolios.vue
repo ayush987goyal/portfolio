@@ -110,7 +110,15 @@ export default {
       color: #fff;
       font-weight: 300;
       font-size: 3.5rem;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 2.5rem;
+      }
     }
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 2rem;
   }
 
   &__cards {
@@ -123,10 +131,14 @@ export default {
     }
 
     @media only screen and (max-width: 730px) {
-      grid-template-columns: 18rem;
+      grid-template-columns: repeat(2, minmax(16rem, 1fr));
       grid-gap: 3rem;
       justify-items: center;
       justify-content: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(2, minmax(12rem, 1fr));
     }
   }
 }

@@ -45,7 +45,19 @@ export default {
       color: rgb(24, 33, 83);
       font-weight: 300;
       font-size: 3.5rem;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 2.5rem;
+      }
     }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 2rem;
   }
 
   &__images {
@@ -55,17 +67,14 @@ export default {
     grid-row-gap: 4rem;
     justify-items: center;
     align-items: center;
+  }
 
-    @media only screen and (max-width: 1100px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    @media only screen and (max-width: 850px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media only screen and (max-width: 600px) {
-      grid-template-columns: 1fr;
+  &__item {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   }
 }
