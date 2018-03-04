@@ -118,7 +118,7 @@ export default {
   }
 
   @media only screen and (max-width: 600px) {
-    padding: 2rem;
+    padding: 2rem 4rem;
   }
 
   &__cards {
@@ -139,6 +139,7 @@ export default {
 
     @media only screen and (max-width: 600px) {
       grid-template-columns: repeat(2, minmax(12rem, 1fr));
+      grid-gap: 1.5rem;
     }
   }
 }

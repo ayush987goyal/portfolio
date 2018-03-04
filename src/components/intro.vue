@@ -108,6 +108,10 @@
       grid-template-columns: 1fr;
       padding: 2rem 0;
     }
+
+    @media only screen and (max-width: 600px) {
+      padding: 1rem 0;
+    }
   }
 
   &__head {
@@ -118,17 +122,29 @@
 
       grid-column: 1 / -1;
     }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__name {
     font-weight: 300;
     font-size: 2.3rem;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.8rem;
+    }
   }
 
   &__desg {
     font-weight: 700;
     font-size: 1.5rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.2rem;
+    }
   }
 
   &__other {

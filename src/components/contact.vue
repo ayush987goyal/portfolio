@@ -5,7 +5,7 @@
     </div>
     <div class="contact__form">
       <v-form v-model="valid" @submit.prevent="submit" ref="form" lazy-validation>
-        <v-container grid-list-xl fluid>
+        <v-container grid-list-md>
           <v-layout wrap>
             <v-flex xs12 sm6>
               <v-text-field
@@ -132,6 +132,7 @@ export default {
 
     @media only screen and (max-width: 600px) {
       width: auto;
+      padding: 1rem;
     }
   }
 }
