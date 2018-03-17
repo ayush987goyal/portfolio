@@ -73,7 +73,7 @@ export default {
       ],
       options: {
         duration: 500,
-        offset: -60,
+        offset: 0,
         easing: 'easeInOutCubic'
       }
     };
