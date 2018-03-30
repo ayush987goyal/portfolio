@@ -1,7 +1,7 @@
 <template>
   <section class="intro">
     <div class="intro__card">
-      <img src="../assets/img/myimage.jpg" alt="Personal Image" class="intro__photo">
+      <img src="../assets/img/new.jpg" alt="Personal Image" class="intro__photo">
       <div class="intro__text">
         <div class="intro__head">
           <span class="intro__name">Ayush Goyal</span>
