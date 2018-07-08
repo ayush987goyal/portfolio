@@ -30,11 +30,10 @@
               </v-text-field>
             </v-flex>
             <v-flex xs12>
-              <v-text-field
+              <v-textarea
                 label="Message"
-                v-model="message"
-                multi-line>
-              </v-text-field>
+                v-model="message">
+              </v-textarea>
             </v-flex>
           </v-layout>
         </v-container>
@@ -76,7 +75,7 @@ export default {
     submit() {
       this.loading = true;
       axios
-        .post('https://us-central1-ayush-port.cloudfunctions.net/sendMail', {
+        .post(process.env.VUE_APP_SENDMAIL_API, {
           name: this.name,
           email: this.email,
           subject: this.subject,
