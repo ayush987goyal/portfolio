@@ -13,7 +13,7 @@
       </v-toolbar>
       <v-divider></v-divider>
       <v-list dense class="pt-0">
-        <v-list-tile ripple v-for="item in items" :key="item.name" @click="$vuetify.goTo($refs[item.target], options)">
+        <v-list-tile ripple v-for="item in items" :key="item.name" @click="$vuetify.goTo($refs[item.target], options); drawer = !drawer">
           <v-list-tile-content>
             <v-list-tile-title>{{ item.name }}</v-list-tile-title>
           </v-list-tile-content>
