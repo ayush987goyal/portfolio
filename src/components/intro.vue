@@ -5,11 +5,7 @@
       <div class="intro__text">
         <div class="intro__head">
           <span class="intro__name">Ayush Goyal</span>
-          <p class="intro__desg">Web Developer</p>
-        </div>
-        <div class="intro__other">
-          <span>Phone:</span>
-          <p>+91-8266-940-459</p>
+          <p class="intro__desg">Full Stack Developer</p>
         </div>
         <div class="intro__other">
           <span>Email:</span>
@@ -17,11 +13,9 @@
         </div>
         <div class="intro__other">
           <span>Address:</span>
-          <p>Kharadi, Pune<br>Maharashtra, India</p>
-        </div>
-        <div class="intro__other">
-          <span>Date of Birth:</span>
-          <p>July 13th, 1995</p>
+          <p>Bengaluru
+            <br>Karnataka, India
+          </p>
         </div>
       </div>
       <div class="intro__social">
@@ -67,6 +61,10 @@
     grid-template-columns: repeat(2, 1fr) 5rem;
     justify-content: center;
 
+    @media only screen and (min-width: 1300px) {
+      height: 450px;
+    }
+
     @media only screen and (max-width: 1100px) {
       grid-template-columns: 1fr;
       grid-template-rows: min-content 5rem;
@@ -92,6 +90,7 @@
 
   &__text {
     padding: 2rem 4rem;
+    text-align: center;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -107,6 +106,7 @@
     @media only screen and (max-width: 730px) {
       grid-template-columns: 1fr;
       padding: 2rem 0;
+      text-align: start;
     }
 
     @media only screen and (max-width: 600px) {
@@ -150,12 +150,22 @@
   &__other {
     span {
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     p {
       font-weight: 300;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+    }
+
+    @media only screen and (min-width: 1300px) {
+      span {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
     }
 
     @media only screen and (max-width: 730px) {

@@ -30,7 +30,6 @@ export default {
 };
 </script>
 
-
 <style lang="scss" scoped>
 .skills {
   padding: 4rem;
