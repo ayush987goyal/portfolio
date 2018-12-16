@@ -1,3 +1,8 @@
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
+
 module.exports = {
-  outputDir: 'docs'
+  outputDir: 'docs',
+  configureWebpack: {
+    plugins: [new VuetifyLoaderPlugin()]
+  }
 };
