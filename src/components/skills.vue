@@ -4,8 +4,8 @@
       <h2>Skills</h2>
     </div>
     <div class="skills__images">
-      <figure v-for="image in images" :key="image" class="skills__item">
-        <img :src="require(`../assets/img/${image}`)">
+      <figure v-for="image in images" :key="image.title" class="skills__item">
+        <img :src="require(`../assets/img/${image.src}`)" :title="image.title">
       </figure>
     </div>
   </section>
@@ -16,14 +16,18 @@ export default {
   data() {
     return {
       images: [
-        'angular.png',
-        'vuejs.png',
-        'nodejs.jpg',
-        'mongodb.png',
-        'typescript.png',
-        'ionic.png',
-        'html5.png',
-        'sass.png'
+        { src: 'html5.png', title: 'HTML5' },
+        { src: 'angular.png', title: 'Angular' },
+        { src: 'vuejs.png', title: 'VueJS' },
+        { src: 'react.png', title: 'ReactJS' },
+        { src: 'ionic.png', title: 'Ionic' },
+        { src: 'nodejs.jpg', title: 'NodeJS' },
+        { src: 'mongodb.png', title: 'MongoDB' },
+        { src: 'typescript.png', title: 'TypeScript' },
+        { src: 'sass.png', title: 'Saas' },
+        { src: 'flutter.png', title: 'Flutter' },
+        { src: 'docker.jpg', title: 'Docker' },
+        { src: 'kubernetes.png', title: 'Kubernetes' }
       ]
     };
   }

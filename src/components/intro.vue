@@ -19,16 +19,16 @@
         </div>
       </div>
       <div class="intro__social">
-        <v-btn fab dark icon href="https://github.com/ayush987goyal" target="_blank">
+        <v-btn fab dark icon href="https://github.com/ayush987goyal" target="_blank" title="GitHub">
           <i class="fab fa-github intro__social--icon"></i>
         </v-btn>
-        <v-btn fab dark icon href="https://www.linkedin.com/in/ayush-goyal-1307/" target="_blank">
+        <v-btn fab dark icon href="https://www.linkedin.com/in/ayush-goyal-1307/" target="_blank" title="LinkedIn">
           <i class="fab fa-linkedin-in intro__social--icon"></i>
         </v-btn>
-        <v-btn fab dark icon href="https://twitter.com/ayush987goyal" target="_blank">
+        <v-btn fab dark icon href="https://twitter.com/ayush987goyal" target="_blank" title="Twitter">
           <i class="fab fa-twitter intro__social--icon"></i>
         </v-btn>
-        <v-btn fab dark icon href="https://www.facebook.com/ayush987goyal" target="_blank">
+        <v-btn fab dark icon href="https://www.facebook.com/ayush987goyal" target="_blank" title="Facebook">
           <i class="fab fa-facebook-f intro__social--icon"></i>
         </v-btn>
       </div>
