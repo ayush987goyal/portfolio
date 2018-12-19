@@ -1,4 +1,4 @@
-workflow "New workflow" {
+workflow "Build & Deploy" {
   on = "push"
   resolves = ["Deploy"]
 }
@@ -18,5 +18,5 @@ action "Build Project" {
 action "Deploy" {
   uses = "actions/npm@c555744"
   needs = ["Build Project"]
-  runs = "NODE_DEBUG=gh-pages npm run deploy"
+  runs = "npm run deploy"
 }
