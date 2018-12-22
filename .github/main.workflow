@@ -16,7 +16,7 @@ action "Build Project" {
 }
 
 action "Deploy" {
-  uses = "actions/npm@c555744"
+  uses = "nchaulet/github-action-gh-pages@master"
   needs = ["Build Project"]
-  runs = "npm run deploy"
+  secrets = ["GITHUB_TOKEN", "GIT_EMAIL", "GIT_USERNAME"]
 }
