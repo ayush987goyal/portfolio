@@ -19,4 +19,7 @@ action "Deploy" {
   uses = "nchaulet/github-action-gh-pages@master"
   needs = ["Build Project"]
   secrets = ["GITHUB_TOKEN", "GIT_EMAIL", "GIT_USERNAME"]
+  env = {
+    PUBLIC_PATH = "dist"
+  }
 }
