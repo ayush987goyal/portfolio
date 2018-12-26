@@ -10,7 +10,7 @@ action "Install Dependencies" {
 
 action "Build Project" {
   uses = "actions/npm@c555744"
-  runs = "npm run build"
+  runs = "npm run generate"
   secrets = ["VUE_APP_SENDMAIL_API"]
   needs = ["Install Dependencies"]
 }
