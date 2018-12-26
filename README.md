@@ -1,22 +1,5 @@
-# new-nuxt-portfolio
+# Portfolio
 
-> My mind-blowing Nuxt.js project
+[My Portfolio](https://ayush987goyal.github.io/portfolio/)
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+It is the portfolio of some of the projects that I made on the beautiful path of Web Development.
