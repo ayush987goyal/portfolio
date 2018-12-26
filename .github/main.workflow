@@ -16,9 +16,9 @@ action "Build Project" {
 }
 
 action "Deploy" {
-  uses = "nchaulet/github-action-gh-pages@master"
+  uses = "ayush987goyal/github-action-gh-pages@master"
   needs = ["Build Project"]
-  secrets = ["GITHUB_TOKEN", "GIT_EMAIL", "GIT_USERNAME"]
+  secrets = ["GITHUB_TOKEN"]
   env = {
     PUBLIC_PATH = "dist"
   }
