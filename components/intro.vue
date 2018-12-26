@@ -65,7 +65,7 @@
       rgba(24, 33, 83, 0.75),
       rgba(24, 33, 83, 0.75)
     ),
-    url(~/static/img/pexels.jpeg);
+    url(~/img/pexels.jpeg);
   background-size: cover;
   background-position: center;
 

@@ -16,7 +16,7 @@ module.exports = {
     ],
     script: [
       { src: 'https://www.googletagmanager.com/gtag/js?id=UA-115909873-1' },
-      { src: '~/gtag.js' }
+      { src: '/gtag.js' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
